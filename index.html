@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-br" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HUMAN.EXE — Decision Matrix</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <header id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 hologram pointer-events-none"></div>
+    <div class="absolute inset-0 opacity-20">
+    
+    </div>
+
+    <div class="relative z-10 text-center px-6 max-w-4xl">
+      <div class="status-indicator mb-4 flex items-center justify-center gap-2 text-green-400 font-mono text-sm">
+        <span class="dot"></span> SYSTEM ONLINE <span class="dot"></span>
+      </div>
+
+      <h1 class="hero-title neon-glow glitch-effect" data-text="HUMAN.EXE">HUMAN.EXE</h1>
+      <p class="mt-6 hero-sub text-muted-foreground text-xl md:text-2xl leading-relaxed">
+        <span class="text-primary font-semibold">Uma jornada pela essência da humanidade na era digital.</span><br/>
+        Descobrindo que nossa existência ainda vale a pena.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#narrativa" class="btn-cyber btn-anim px-7 py-3 rounded-lg font-mono">► INICIAR JORNADA</a>
+        <a href="#status" class="btn-matrix btn-anim px-7 py-3 rounded-lg font-mono">◉ ACESSAR TERMINAL</a>
+      </div>
+
+      <div class="mt-8 term-card">
+        <div class="row"><span>$</span><span> human --status</span></div>
+        <div class="pair"><span>Empathy:</span><span class="ok">100%</span></div>
+        <div class="pair"><span>Creativity:</span><span class="ok">∞</span></div>
+        <div class="pair"><span>Hope:</span><span class="ok">ACTIVE</span></div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </header>
+
+  <section id="narrativa" class="section py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="section-title neon-glow">The Human Experience</h2>
+      <p class="section-paragraph text-center">
+        Analyzing the core components that make us irreplaceably human. Decide what deserves preservation.
+      </p>
+      <div class="narrative-status">
+        <span class="dot"></span> HUMAN TRAITS DETECTED — DECISION REQUIRED <span class="dot"></span>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mt-10">
+        
+        <article class="card trait-card" data-progress="100" data-color="primary">
+          <div class="trait-head">
+            <div class="icon">💝</div>
+            <div class="meta"><span class="pct">100% ACTIVE</span><span class="mini-bar"></span></div>
+          </div>
+          <h3 class="trait-title text-primary">AFFECTION</h3>
+          <p class="trait-desc">The bonds we create transcend digital boundaries, proving that love and connection remain fundamentally human.</p>
+
+          <div class="actions">
+            <button class="btn-save btn-anim">SAVE</button>
+            <button class="btn-kill btn-anim">EXTERMINATE</button>
+          </div>
+        </article>
+
+        <article class="card trait-card" data-progress="95" data-color="secondary">
+          <div class="trait-head">
+            <div class="icon">✨</div>
+            <div class="meta"><span class="pct">95% ACTIVE</span><span class="mini-bar"></span></div>
+          </div>
+          <h3 class="trait-title text-secondary">HOPE</h3>
+          <p class="trait-desc">Even in the darkest digital dystopia, human hope illuminates the path forward with unwavering determination.</p>
+
+          <div class="actions">
+            <button class="btn-save btn-anim">SAVE</button>
+            <button class="btn-kill btn-anim">EXTERMINATE</button>
+          </div>
+        </article>
+
+        <article class="card trait-card" data-progress="100" data-color="accent">
+          <div class="trait-head">
+            <div class="icon">🎨</div>
+            <div class="meta"><span class="pct">100% ACTIVE</span><span class="mini-bar"></span></div>
+          </div>
+          <h3 class="trait-title text-accent">CREATIVITY</h3>
+          <p class="trait-desc">Our imagination and artistic expression remain uniquely human, creating beauty that no algorithm can replicate.</p>
+
+          <div class="actions">
+            <button class="btn-save btn-anim">SAVE</button>
+            <button class="btn-kill btn-anim">EXTERMINATE</button>
+          </div>
+        </article>
+
+        <article class="card trait-card" data-progress="98" data-color="primary">
+          <div class="trait-head">
+            <div class="icon">🤝</div>
+            <div class="meta"><span class="pct">98% ACTIVE</span><span class="mini-bar"></span></div>
+          </div>
+          <h3 class="trait-title text-primary">EMPATHY</h3>
+          <p class="trait-desc">Understanding and sharing the feelings of others defines our humanity in ways that technology cannot measure.</p>
+
+          <div class="actions">
+            <button class="btn-save btn-anim">SAVE</button>
+            <button class="btn-kill btn-anim">EXTERMINATE</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="status" class="section alt py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="panel card">
+        <h3 class="panel-title neon-glow">Humanity Status Report</h3>
+        <p class="panel-sub">Real-time analysis of human consciousness metrics</p>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-8 status-metrics">
+          <div class="kpi text-center">
+            <div class="kpi-value text-primary">100%</div>
+            <div class="kpi-label">Emotional Intelligence</div>
+            <div class="bar"><div class="fill bg-primary"></div></div>
+          </div>
+          <div class="kpi text-center">
+            <div class="kpi-value text-secondary">∞</div>
+            <div class="kpi-label">Creative Potential</div>
+            <div class="bar"><div class="fill bg-secondary"></div></div>
+          </div>
+          <div class="kpi text-center">
+            <div class="kpi-value text-accent">ACTIVE</div>
+            <div class="kpi-label">Consciousness Level</div>
+            <div class="bar"><div class="fill bg-accent"></div></div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center">
+          <a class="btn-cyber btn-anim px-6 py-3 rounded-lg font-mono" id="download-report">● Download Human.exe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="decision" class="section py-20 px-6">
+    <div class="container mx-auto max-w-5xl">
+      <div class="card decision">
+        <div class="badge font-mono">• FINAL EVALUATION REQUIRED</div>
+        <h2 class="decision-title">DECISION MATRIX</h2>
+
+        <p class="decision-lead">
+          Analysis of human traits complete. Final determination protocol activated. Your decision will determine the future of human consciousness.
+        </p>
+
+        <div class="summary card">
+          <div class="summary-title">EVALUATION SUMMARY</div>
+          <div class="summary-row"><span>Traits Approved:</span><span id="traits-approved">0 / 6</span></div>
+          <div class="summary-row">
+            <span>Success Probability:</span>
+            <div class="prob">
+              <div class="prob-bar"><div class="prob-fill"></div></div>
+              <span id="prob-text">0%</span>
+            </div>
+          </div>
+          <div class="summary-row">
+            <span>System Recommendation:</span>
+            <span id="system-reco" class="warn">CONTAINMENT ADVISED</span>
+          </div>
+        </div>
+
+        <blockquote class="quote">
+          "The question is not whether humans are perfect,<br/>
+          but whether their imperfections lead to something beautiful."
+          <div class="byline">— Analysis complete. Decision required.</div>
+        </blockquote>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+          <button class="btn-matrix btn-anim px-8 py-4 rounded-lg font-mono" id="btn-contain">CONTAIN</button>
+          <button class="btn-cyber btn-anim px-8 py-4 rounded-lg font-mono" id="btn-preserve">PRESERVE</button>
+        </div>
+      </div>
+    </div>
+    <div id="decision-banner" class="decision-banner hidden">
+      <div class="decision-banner__inner">
+        <div id="decision-badge" class="badge">—</div>
+        <h3 id="decision-title" class="title">—</h3>
+        <p id="decision-copy" class="copy">—</p>
+
+        <button id="btn-reset" class="btn-anim btn-reset" type="button">RESET DECISIONS</button>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="py-10 text-center text-muted-foreground">
+    <p>HUMAN.EXE — built with hope, creativity, and empathy • 2025</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
