@@ -1,17 +1,19 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Timeline
 const heroTl = gsap.timeline({ delay: 0.2 });
 heroTl
   .from(".hero-title", { y: 80, opacity: 0, duration: 1.1, ease: "power3.out" })
   .to(".hero-title", { textShadow: "0 0 18px currentColor, 0 0 36px currentColor", duration: 0.6 }, "-=0.3");
 
+  // Animação contínua em loop (usando gsap.to)
 gsap.to("#hero .hologram", {
   y: -80, opacity: 0.9, ease: "none",
   scrollTrigger: { trigger: "#hero", start: "top top", end: "bottom top", scrub: 1 }
 });
 
-
+// Animação de entrada (usando gsap.from)
 gsap.from(".trait-card", {
   y: 40, opacity: 0, duration: 0.8, ease: "power2.out", stagger: 0.15,
   scrollTrigger: { trigger: "#narrativa", start: "top 75%", end: "bottom 40%", toggleActions: "play none none reverse" }
@@ -31,7 +33,7 @@ document.querySelectorAll(".trait-card").forEach(card => {
   fill.innerHTML = `<span style="position:absolute;left:0;top:0;bottom:0;width:var(--w);background:currentColor;opacity:.6;border-radius:999px;"></span>`;
 });
 
-
+// Transição customizada (usando gsap.fromTo)
 gsap.fromTo("#status .fill",
   { width: "0%" },
   {
